@@ -1,0 +1,3 @@
+#!/bin/sh
+
+${ARC_QEMU_PATH}/qemu-arc -R 2G -L ${ARC_TOOLCHAIN_SYSROOT_DIR} -cpu hs5x $@

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+${ARC_QEMU_PATH}/qemu-arc64 -R 4G -L ${ARC_TOOLCHAIN_SYSROOT_DIR} -cpu hs6x $@
