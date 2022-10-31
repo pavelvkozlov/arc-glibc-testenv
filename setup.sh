@@ -2,7 +2,7 @@
 
 usage() {
      echo "Usage:"
-     echo "Fortmat: $0 TEST_TARGET TEST_DIRECTORY"
+     echo "Format: $0 TEST_TARGET TEST_DIRECTORY"
      echo "   TEST_TARGET: arc/arc32/arc64"
      echo "   TEST_DIRECTORY: is a name directory that will be created"
      echo "                   inside ./testing dir for a new test run"
