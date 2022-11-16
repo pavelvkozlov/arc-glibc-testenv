@@ -1,9 +1,8 @@
 #!/bin/sh
 
-IMAGE=./images/vmlinux
-
 TAP=${1:-"tap1"}
 IP=${2:-"192.168.10.1"}
+IMAGE=${3:-"./images/vmlinux"}
 
 SWAP=../swap_${TAP}.raw
 
