@@ -14,6 +14,7 @@ then
 	exit 1
 fi
 
+RUN_DIR=`pwd`
 TEST_REPORTS_DIR=$1
 
 if [ "${TEST_REPORTS_DIR: -1}" = "/" ] 
@@ -69,3 +70,6 @@ echo "   " `cat $TEST_REPORTS_DIR/tests.sum | grep -w PASS | wc -l` " PASS" >> $
 echo "   " `cat $TEST_REPORTS_DIR/tests.sum | grep -w UNSUPPORTED | wc -l` " UNSUPPORTED" >> $TEST_REPORTS_DIR/$FINAL_REPORT
 echo "   " `cat $TEST_REPORTS_DIR/tests.sum | grep -w XFAIL | wc -l` " XFAIL" >> $TEST_REPORTS_DIR/$FINAL_REPORT
 echo "   " `cat $TEST_REPORTS_DIR/tests.sum | grep -w XPASS | wc -l` " XPASS" >> $TEST_REPORTS_DIR/$FINAL_REPORT
+
+# Return back to run directory
+cd $RUN_DIR
