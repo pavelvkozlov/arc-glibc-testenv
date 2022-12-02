@@ -1,5 +1,6 @@
 nsim_isa_family=av3hs
-nsim_isa_dc_hw_prefetch=1
+#nsim_isa_dc_hw_prefetch=1
+nsim_isa_has_hw_pf=1
 nsim_isa_dual_issue_option=1
 nsim_isa_atomic_option=1
 nsim_isa_m128_option=0
@@ -20,11 +21,11 @@ mmu_address_space=32
 nsim_mem-dev=uart0,kind=dwuart,base=0xf0000000,irq=24
 nsim_isa_number_of_interrupts=32
 nsim_isa_number_of_external_interrupts=32
-nsim_isa_pct_counters=8
-nsim_isa_pct_interrupt=1
-nsim_connect=2
-nsim_connect_idu=2
-nsim_connect_idu_cirqnum=16
-nsim_isa_host_timer=1
+#nsim_isa_pct_counters=8
+#nsim_isa_pct_interrupt=1
+#nsim_connect=2
+#nsim_connect_idu=2
+#nsim_connect_idu_cirqnum=16
+#nsim_isa_host_timer=1
 #nsim_trace=1
 #nsim_trace-output=trace.txt
