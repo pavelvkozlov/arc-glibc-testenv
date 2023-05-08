@@ -15,5 +15,5 @@ sudo ip link set $TAP up
 
 fallocate -l 1G $SWAP
 
-$ARC_NSIM_PATH/nsimdrv -propsfile $PROP -p nsim_mem-dev=virt-net,tap=$TAP,start=0xf0102000,end=0xf0103fff \
-				-prop=nsim_mem-dev=virt-blk,start=0xf0100000,end=0xf0101fff,filename=$SWAP $IMAGE
+$ARC_NSIM_PATH/nsimdrv -propsfile $PROP -p nsim_mem-dev=virt-net,tap=$TAP,start=0xf0102000,end=0xf0103fff,irq=32 \
+				-prop=nsim_mem-dev=virt-blk,start=0xf0100000,end=0xf0101fff,irq=31,filename=$SWAP $IMAGE
